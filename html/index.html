@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ITRechner</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
-<body>
-    <input type="text" id="inputNR" name="Eingabefeld" required
-        placeholder="Input">
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- Herzlich Willkommen! -->
+    <input
+      type="text"
+      id="inputNR"
+      name="Eingabefeld"
+      required
+      placeholder="Input"
+    />
 
     <div>
-        <label for="inputType">Zahlensystem Input</label>
-        <select id="inputType" name="inputType">
-            <option value="dez">Dezimal</option>
-            <option value="hex">Hexa</option>
-            <option value="bin">Binär</option>
-        </select>    
+      <label for="inputType">Zahlensystem Input</label>
+      <select id="inputType" name="inputType">
+        <option value="dez">Dezimal</option>
+        <option value="hex">Hexa</option>
+        <option value="bin">Binär</option>
+      </select>
     </div>
-    
+
     <div>
-        <label for="outputType">Zahlensystem Output</label>
-        <select id="outputType" name="outputType">
-            <option value="dez">Dezimal</option>
-            <option value="hex">Hexa</option>
-            <option value="bin">Binär</option>
-        </select>    
+      <label for="outputType">Zahlensystem Output</label>
+      <select id="outputType" name="outputType">
+        <option value="dez">Dezimal</option>
+        <option value="hex">Hexa</option>
+        <option value="bin">Binär</option>
+      </select>
     </div>
-   <div>
-    <button onclick="calculate()">Berechnen</button>
-   </div>
-    <div> Output:
-        <div id="output"></div>
+    <div>
+      <button onclick="calculate()">Berechnen</button>
     </div>
-    
-    <div >
-        <span>Rechnung</span>
-        <div id="calculation"></div>
+    <div>
+      Output:
+      <div id="output"></div>
     </div>
-    
+
+    <div>
+      <span>Rechnung</span>
+      <div id="calculation"></div>
+    </div>
+
     <script src="../JS/app.js"></script>
-
-</body>
+  </body>
 </html>
